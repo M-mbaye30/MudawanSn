@@ -2,7 +2,7 @@
 
 > A publicly available parallel corpus for the Wolof–Arabic language pair, a gold-standard resource containing 1,271 sentence-aligned pairs. The corpus consists of manual translations from Wolof into Modern Standard Arabic (MSA). The source texts are drawn from the MasakhaNER corpus, covering politics, society, religion, and sports in Senegalese news discourse.
 
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 [![Hugging Face Dataset](https://img.shields.io/badge/%F0%9F%A4%97-Hugging%20Face-blue.svg)](https://huggingface.co/datasets/mbaye930/wolof-arabic-parallel-corpus)
 
 ---
@@ -18,11 +18,6 @@ The corpus is divided into fixed, standard splits to ensure fair and reproducibl
 *   **`validation`**: 95 sentence pairs (available in `data/dev.tsv`)
 *   **`test`**: 96 sentence pairs (available in `data/test.tsv`)
 
-| Split | Wolof (`wol_Latn`) | Arabic (`arb_Arab`) |
-| :--- | :--- | :--- |
-| **Gold Sentence Pairs** | 1,271 | 1,271 |
-| **Total Tokens** | 25,246 | 17,801 |
-| **Unique Tokens (Vocab)** | 4,664 | 7,556 |
 
 ### 📂 Data Fields
 
@@ -109,7 +104,6 @@ All models (NLLB-200, mT5-base, AfriNLLB-12, and AfriNLLB-8) can be fine-tuned a
 *   [baseline_nllb.ipynb](notebooks/baseline_nllb.ipynb): Fine-tuning NLLB-200 (600M).
 *   [baseline_mt5.ipynb](notebooks/baseline_mt5.ipynb): Fine-tuning mT5-base.
 *   [baseline_afrinllb.ipynb](notebooks/baseline_afrinllb.ipynb): Fine-tuning AfriNLLB-12 and AfriNLLB-8.
-*   [nllb_wolof_arabic_experiment.ipynb](notebooks/nllb_wolof_arabic_experiment.ipynb): Complete original monolithic experimentation pipeline.
 
 ---
 
@@ -122,7 +116,7 @@ All models (NLLB-200, mT5-base, AfriNLLB-12, and AfriNLLB-8) can be fine-tuned a
 
 ## 📄 License
 
-This dataset is released under the [**Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)**](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
+This dataset is released under the [**Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**](https://creativecommons.org/licenses/by-nc/4.0/) license.
 
 ---
 
@@ -139,14 +133,3 @@ If you use this corpus or the baseline code in your research, please cite our pa
 }
 ```
 
-### 2. The ReferenceNLP Thesis
-```bibtex
-@mastersthesis{diop2024thesis,
-  author  = {Diop, Thierno},
-  title   = {Towards Building a Wolof-Arabic Linguistic Corpus for Machine Translation Purposes},
-  school  = {Mohammed V University in Rabat, Faculty of Letters and Human Sciences},
-  year    = {2024},
-  address = {Rabat, Morocco},
-  note    = {Master's Thesis in Natural Language Processing}
-}
-```
